@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <title>TM</title>
+
+    <!-- Icons -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Premium Icons -->
+    <link href="css/glyphicons.css" rel="stylesheet">
+    <link href="css/glyphicons-filetypes.css" rel="stylesheet">
+    <link href="css/glyphicons-social.css" rel="stylesheet">
+
+    <!-- Main styles for this application -->
+    <link href="css/style.css" rel="stylesheet">
+    <style type="text/css">
+      .progressbar-batch-icon{
+        margin-top: 2%;
+        position: absolute;
+      }
+      header.navbar{
+        background-color: #aa42f4 !important;
+      }
+      .assigned-info{
+        background-color:#383e4b;
+      }
+      .completed-success{
+    background-color:#0aaa65;
+    }
+    header.navbar a.navbar-brand {
+    background-color: #383e4b !important;
+  }
+  .progress{
+  border-radius: 0px !important; 
+  }
+  table th, .table td {
+    padding-left: 0px !important;
+    padding-right: 0px !important; 
+  }
+  .navbar-brand {
+    font-size: 1.02rem !important;
+}
+  .sidebar-text-font{
+    font-size:16px;
+  }
+</style>
+</head>
+
+<body class="navbar-fixed sidebar-nav fixed-nav">
+    <header class="navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler mobile-toggler hidden-lg-up" type="button">☰</button>
+            <a class="navbar-brand" href="#">TRANSLATION MANAGER</a>
+            <ul class="nav navbar-nav hidden-md-down">
+                <li class="nav-item">
+                    <a class="nav-link navbar-toggler layout-toggler" href="#">☰</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav float-xs-right">
+                <li class="nav-item px-1">
+                    <a class="nav-link" href="#">Sync</a>
+                </li>
+                <li class="nav-item px-1">
+                    <a class="nav-link" href="#">Report</a>
+                </li>
+                <li class="nav-item px-1">
+                    <a class="nav-link" href="#">Settings</a>
+                </li>
+                <li class="nav-item px-1">
+                    <a class="nav-link" href="#">Package Manager</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                        <span class="">Online</span>
+                    </a>
+                    <!-- <div class="dropdown-menu dropdown-menu-right">
+                       
+                        <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> Settings</a>
+                        <div class="divider"></div>
+                        <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
+                    </div> -->
+                </li>
+                <li class="nav-item hidden-md-down">
+                    <!-- <a class="nav-link aside-toggle" href="#">☰</a> -->
+                </li>
+
+            </ul>
+        </div>
+    </header>
+    <div class="sidebar">
+      <nav class="sidebar-nav">
+        <ul class="nav">
+          <li class="nav-item sidebar-text-font">
+              <a class="nav-link" href="#"><i class="fa fa-user-plus"></i> ASSIGNMENTS </a>
+          </li>
+          <li class="divider"></li>
+          <li class="nav-item sidebar-text-font">
+              <a class="nav-link" href="widgets.html"><i class="fa fa-bar-chart"></i> PROGRESS</a>
+          </li>
+          <li class="nav-item sidebar-text-font">
+              <a class="nav-link" href="charts.html"><i class="fa fa-users"></i> Charts</a>
+          </li>
+          <li class="divider"></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main content -->
+    <main class="main">
+        <div class="container-fluid pt-2">
+
+            <div class="animated fadeIn">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-12">
+                        <div class="card">
+                            <div class="card-block p-1 clearfix">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                      <div class="callout callout-info">
+                                        <h3 class="card-title clearfix mb-0">View Project Progress</h3>
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                      <div class="callout callout-info">
+                                        <h5 class="">Language: English</h5>
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-3 horizontal-bars">
+                                      <div class="callout callout-info">
+                                        <li class="legend">
+                                            <span class="tag tag-pill assigned-info"></span>
+                                            <small>Assigned</small>&nbsp;
+                                            <span class="tag tag-pill completed-success"></span>
+                                            <small>Completed</small>
+                                        </li>
+                                      </div>
+                                    </div>
+                                  <!--   <ul class="horizontal-bars">
+                                            <li>
+                                              <div class="callout callout-info">
+                                              <h3 class="card-title clearfix mb-0">View Project Progress</h3>
+                                            </div>
+                                            </li>
+                                            <li>
+                                              <div class="callout callout-info">
+                                                <small class="">Language: English</small>
+                                              </div>
+                                            </li>
+                                            <li class="legend">
+                                                <span class="tag tag-pill tag-info"></span>
+                                                <small>New clients</small>&nbsp;
+                                                <span class="tag tag-pill tag-danger"></span>
+                                                <small>Recurring clients</small>
+                                            </li>
+                                        </ul> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.col-->
+                </div>
+                <!--/.row-->
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-block">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <h3 class="card-title clearfix mb-0">Term - 1</h3>
+                                    </div>
+                                    <div class="col-sm-4">
+                                    </div>
+                                    <div class="col-sm-4">
+                                    </div>
+                                </div>
+                                <hr class="m-0">
+                                <br>
+                                <table class="table table-hover table-outline mb-0 hidden-sm-down">
+                                    <thead class="thead-default">
+                                        <tr>
+                                            <th class="text-xs-center sidebar-text-font">Unit</th>
+                                            <th class="text-xs-center sidebar-text-font">Stage 1</th>
+                                            <th class="text-xs-center sidebar-text-font">Stage 2</th>
+                                            <th class="text-xs-center sidebar-text-font">Stage 3</th>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td class="text-xs-center">
+                                            <div>Genesis</div>
+                                            <div class="small text-muted">
+                                              <span class="tag tag-info">50</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                          <div class="progress">
+                                            <div class="progress-bar completed-success" role="progressbar" style="width:40%">
+                                              <span class="tag tag-info progressbar-batch-icon">4</span>
+                                            </div>
+                                            <div class="progress-bar assigned-info" role="progressbar" style="width:10%">
+                                              <span class="tag tag-info progressbar-batch-icon">9</span>
+                                            </div>
+                                            </div>
+                                        </td>
+                                        
+                                        <td>
+                                          <div class="progress">
+                                            <div class="progress-bar completed-success" role="progressbar" style="width:30%">
+                                             <span class="tag tag-info progressbar-batch-icon"></span>
+                                            </div>
+                                            <div class="progress-bar assigned-info" role="progressbar" style="width:10%">
+                                              <span class="tag tag-info progressbar-batch-icon"></span>
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div class="progress">
+                                            <div class="progress-bar completed-success" role="progressbar" style="width:30%">
+                                              <span class="tag tag-info progressbar-batch-icon"></span>
+                                            </div>
+                                            <div class="progress-bar assigned-info" role="progressbar" style="width:20%">
+                                              <span class="tag tag-info progressbar-batch-icon"></span>
+                                            </div>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="text-xs-center">
+                                            <div>Genesis</div>
+                                            <div class="small text-muted">
+                                              <span class="tag tag-info">50</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                          <div class="progress">
+                                            <div class="progress-bar completed-success" role="progressbar" style="width:100%">
+                                              <span class="tag tag-info progressbar-batch-icon">50</span>
+                                            </div>
+                                            <div class="progress-bar assigned-info " role="progressbar" style="width:0%">
+                                              <span class="tag tag-info progressbar-batch-icon"></span>
+                                            </div>
+                                            </div>
+                                        </td>
+                                        
+                                        <td>
+                                          <div class="progress">
+                                            <div class="progress-bar completed-success" role="progressbar" style="width:40%">
+                                             <span class="tag tag-info progressbar-batch-icon">30</span>
+                                            </div>
+                                            <div class="progress-bar assigned-info" role="progressbar" style="width:20%">
+                                              <span class="tag tag-info progressbar-batch-icon"></span>
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div class="progress">
+                                            <div class="progress-bar completed-success" role="progressbar" style="width:30%">
+                                              <span class="tag tag-info progressbar-batch-icon"></span>
+                                            </div>
+                                            <div class="progress-bar assigned-info" role="progressbar" style="width:10%">
+                                              <span class="tag tag-info progressbar-batch-icon"></span>
+                                            </div>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.col-->
+                </div>
+                <!--/.row-->
+            </div>
+
+
+        </div>
+        <!-- /.conainer-fluid -->
+    </main>
+
+    <footer class="footer">
+       
+    </footer>
+
+    <!-- Bootstrap and necessary plugins -->
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <!-- GenesisUI main scripts -->
+    <script src="js/app.js"></script>
+
+    <!-- Custom scripts required by this view -->
+    <script src="js/views/main.js"></script>
+
+</body>
+</html>
