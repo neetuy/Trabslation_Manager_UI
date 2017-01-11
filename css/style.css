@@ -3254,7 +3254,7 @@ header.navbar {
     padding: 0.5rem 1rem;
     background-color: #383e4b;
     color: #FFFFFF;
-    background-image: url("../img/logo.png");
+    background-image: url("../img/favicon.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 90px auto; }
@@ -13185,4 +13185,33 @@ nav.sidebar-nav .form-control, nav.sidebar-nav .daterangepicker .input-mini, .da
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
   background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
   background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}
+.progressbar-batch-icon{
+margin-top: 2%;
+position: absolute;
+}
+header.navbar{
+background-color: #aa42f4 !important;
+}
+.assigned-info{
+background-color:#383e4b;
+}
+.completed-success{
+background-color:#0aaa65;
+}
+header.navbar a.navbar-brand {
+background-color: #383e4b !important;
+}
+.progress{
+border-radius: 0px !important; 
+}
+table th, .table td {
+padding-left: 0px !important;
+padding-right: 0px !important; 
+}
+.navbar-brand {
+font-size: 1.02rem !important;
+}
+.sidebar-text-font{
+font-size:16px;
 }

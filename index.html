@@ -11,46 +11,18 @@
 
     <!-- Icons -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/simple-line-icons.css" rel="stylesheet">
-
-    <!-- Premium Icons -->
-    <link href="css/glyphicons.css" rel="stylesheet">
-    <link href="css/glyphicons-filetypes.css" rel="stylesheet">
-    <link href="css/glyphicons-social.css" rel="stylesheet">
-
     <!-- Main styles for this application -->
     <link href="css/style.css" rel="stylesheet">
-    <style type="text/css">
-      .progressbar-batch-icon{
-        margin-top: 2%;
-        position: absolute;
-      }
-      header.navbar{
-        background-color: #aa42f4 !important;
-      }
-      .assigned-info{
-        background-color:#383e4b;
-      }
-      .completed-success{
-    background-color:#0aaa65;
-    }
-    header.navbar a.navbar-brand {
-    background-color: #383e4b !important;
-  }
-  .progress{
-  border-radius: 0px !important; 
-  }
-  table th, .table td {
-    padding-left: 0px !important;
-    padding-right: 0px !important; 
-  }
-  .navbar-brand {
-    font-size: 1.02rem !important;
-}
-  .sidebar-text-font{
-    font-size:16px;
-  }
-</style>
+    <!-- Bootstrap and necessary plugins -->
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- GenesisUI main scripts -->
+    <script src="js/app.js"></script>
+
+    <!-- Custom scripts required by this view -->
+    <script src="js/views/main.js"></script>
+
+
 </head>
 
 <body class="navbar-fixed sidebar-nav fixed-nav">
@@ -147,24 +119,6 @@
                                         </li>
                                       </div>
                                     </div>
-                                  <!--   <ul class="horizontal-bars">
-                                            <li>
-                                              <div class="callout callout-info">
-                                              <h3 class="card-title clearfix mb-0">View Project Progress</h3>
-                                            </div>
-                                            </li>
-                                            <li>
-                                              <div class="callout callout-info">
-                                                <small class="">Language: English</small>
-                                              </div>
-                                            </li>
-                                            <li class="legend">
-                                                <span class="tag tag-pill tag-info"></span>
-                                                <small>New clients</small>&nbsp;
-                                                <span class="tag tag-pill tag-danger"></span>
-                                                <small>Recurring clients</small>
-                                            </li>
-                                        </ul> -->
                                 </div>
                             </div>
                         </div>
@@ -279,7 +233,6 @@
                                       </tr>
                                     </tbody>
                                 </table>
-
                             </div>
                         </div>
                     </div>
@@ -296,17 +249,5 @@
     <footer class="footer">
        
     </footer>
-
-    <!-- Bootstrap and necessary plugins -->
-    <script src="js/libs/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
-    <!-- GenesisUI main scripts -->
-    <script src="js/app.js"></script>
-
-    <!-- Custom scripts required by this view -->
-    <script src="js/views/main.js"></script>
-
 </body>
 </html>
