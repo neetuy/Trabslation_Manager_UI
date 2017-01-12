@@ -477,8 +477,12 @@ hr {
 
 small,
 .small {
-  font-size: 80%;
-  font-weight: normal; }
+  font-size: 16px;
+  font-weight: normal;
+  }
+  .tag-font-weight{
+    font-weight: 500;
+  }
 
 mark,
 .mark {
@@ -3224,7 +3228,7 @@ header.navbar {
   position: relative;
   height: 50px;
   padding: 0;
-  line-height: 50px;
+  line-height: 30px;
   background-color: #36a9e1; }
   header.navbar .container-fluid {
     padding: 0; }
@@ -5279,12 +5283,12 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   padding-left: 1rem !important; }
 
 .px-1 {
-  padding-right: 1rem !important;
-  padding-left: 1rem !important; }
+  padding-right: 2rem !important;
+  padding-left: 2rem !important; }
 
 .py-1 {
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important; }
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important; }
 
 .p-2 {
   padding: 1.5rem 1.5rem !important; }
@@ -10130,7 +10134,7 @@ body:not(.top-nav) .sidebar {
   height: 100%;
   padding: 0;
   color: #fff;
-  background: #383e4b; }
+  background: #505772; }
   body:not(.top-nav) .sidebar .sidebar-close {
     position: absolute;
     right: 0;
@@ -10678,8 +10682,8 @@ nav.top-nav {
       text-align: center; }
       .horizontal-bars li.legend .tag {
         display: inline-block;
-        width: 8px;
-        height: 8px;
+        width: 15px;
+        height: 15px;
         padding: 0; }
     .horizontal-bars li.divider {
       height: 40px; }
@@ -13188,11 +13192,11 @@ nav.sidebar-nav .form-control, nav.sidebar-nav .daterangepicker .input-mini, .da
   background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
 }
 .progressbar-batch-icon{
-margin-top: 1.2%;
+margin-top: 13px;
 position: absolute;
 }
 header.navbar{
-background-color: #aa42f4 !important;
+background-color:#9415d3 !important;
 }
 .assigned-info{
 background-color:#383e4b;
@@ -13201,14 +13205,14 @@ background-color:#383e4b;
 background-color:#0aaa65;
 }
 header.navbar a.navbar-brand {
-background-color: #383e4b !important;
+background-color:#505772 !important;
 }
 .progress{
 border-radius: 0px !important; 
 }
 table th, .table td {
-padding-left: 0px !important;
-padding-right: 0px !important; 
+padding-left: 1px !important;
+padding-right: 1px !important; 
 }
 .navbar-brand {
 font-size: 1.02rem !important;
@@ -13217,10 +13221,23 @@ font-size: 1.02rem !important;
 font-size:16px;
 }
 .progress-percentage-completed{
-  margin-left:20px;
+  margin-left:0px;
     position: absolute;
 }
 .progress-percentage-assigned{
  margin-top:-20px;
     position: absolute; 
+}
+
+.nav-line{
+    display: block;
+    border-right: 1px solid #ccc;
+    margin: 1em 0;
+    height:30px;
+    top:10px;
+   
+}
+.fa{
+ font-size: 1.8em !important;
+ padding-right: 30px;
 }
