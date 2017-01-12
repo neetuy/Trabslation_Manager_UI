@@ -3306,10 +3306,10 @@ header.navbar .navbar-nav .nav-link {
 .card {
   position: relative;
   display: block;
-  margin-bottom: 0.75rem;
+  /*margin-bottom: 0.75rem;*/
   background-color: #fff;
-  border-radius: 0.25rem;
-  border: 1px solid #e4e6eb; }
+  /*border-radius: 0.25rem;*/
+  /*border: 1px solid #e4e6eb;*/ }
 
 .card-block {
   padding: 1.25rem; }
@@ -3532,7 +3532,7 @@ header.navbar .navbar-nav .nav-link {
       width: 100%; } }
 
 .card {
-  margin-bottom: 1.5rem; }
+  /*margin-bottom: 1.5rem;*/ }
 
 .card-header i.icon-bg {
   display: inline-block;
@@ -12919,7 +12919,7 @@ nav.sidebar-nav .form-control, nav.sidebar-nav .daterangepicker .input-mini, .da
 
 .card, .social-box {
   border-top-width: 0;
-  border-bottom-width: 2px; }
+ /* border-bottom-width: 2px;*/ }
 
 [class*="card-outline-"] {
   border-top-width: 1px !important; }
