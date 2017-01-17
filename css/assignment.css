@@ -13609,14 +13609,15 @@ input[type="radio"] .styled:checked + label::after {
 .checkbox label::after {
   display: inline-block;
   position: absolute;
-  width: 16px;
-  height: 16px;
+  width: 30px;
+  height: 30px;
   left: 0;
   top: 0;
-  margin-left: -20px;
+ /* margin-left: -18px;*/
+  margin-top: -20px;
   padding-left: 3px;
   padding-top: 1px;
-  font-size: 11px;
+  font-size: 20px;
       color: #555555; }
 .checkbox input[type="checkbox"],
 .checkbox input[type="radio"] {
