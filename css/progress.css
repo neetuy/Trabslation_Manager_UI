@@ -6,7 +6,6 @@
  * @license Commercial
  */
 @charset "UTF-8";
-/*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -8872,7 +8871,6 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
  * Version: 0.13.1 - 2015-09-30T05:39:26.659Z
  * License: MIT
  */
-/* Style when highlighting a search. */
 .ui-select-highlight {
   font-weight: bold; }
 
@@ -13217,7 +13215,7 @@ padding-right: 1px !important;
 .navbar-brand {
 font-size: 1.02rem !important;
 }
-.sidebar-text-font{
+.text-font-size{
 font-size:16px;
 }
 .progress-percentage-completed{
