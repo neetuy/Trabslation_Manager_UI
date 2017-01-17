@@ -1,0 +1,408 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <title>TM</title>
+
+    <!-- Icons -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Main styles for this application -->
+    <link href="css/assignment.css" rel="stylesheet">
+
+    <!-- Bootstrap and necessary plugins -->
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/0.3.7/awesome-bootstrap-checkbox.css"></script>
+    <!-- GenesisUI main scripts -->
+    <script src="js/app.js"></script>
+
+    <!-- Custom scripts required by this view -->
+    <script src="js/views/main.js"></script>
+
+
+</head>
+<body class="navbar-fixed sidebar-nav fixed-nav">
+    <header class="navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler mobile-toggler hidden-lg-up" type="button">☰</button>
+            <a class="navbar-brand" href="#"></a>
+            <ul class="nav navbar-nav hidden-md-down hidden-lg-up">
+                <li class="nav-item">
+                    <a class="nav-link navbar-toggler layout-toggler" href="#">☰</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav float-xs-right ">
+                <li class="nav-item px-1 nav-line hidden-lg-down">
+                    <a class="nav-link " href="#">Sync</a>
+                </li>
+                <li class="nav-item px-1 nav-line hidden-lg-down">
+                    <a class="nav-link" href="#">Report</a>
+                </li>
+                <li class="nav-item px-1 nav-line hidden-lg-down">
+                    <a class="nav-link" href="#">Settings</a>
+                </li>
+                <li class="nav-item px-1 nav-line hidden-lg-down">
+                    <a class="nav-link" href="#">Package Manager</a>
+                </li>
+                 <li class="nav-item px-1 nav-line hidden-lg-down">
+                    <a class="nav-link" href="#"><span class="nav-item">Online</span>
+                    <img src="img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                    </a>
+
+                </li>
+                 <li class="nav-item px-1 hidden-lg-up">
+                    <a class="nav-link dropdown-toggle nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">   
+                    </a>
+                <div class="dropdown-menu dropdown-menu-right ">
+                  <div class="dropdown-item text-xs-center">
+                    <strong>Sync</strong>
+                  </div>
+                    <div class="divider"></div>
+                  <div class="dropdown-item text-xs-center">
+                    <strong>Report</strong>
+                  </div>
+                    <div class="divider"></div>
+                    <div class="dropdown-item text-xs-center">
+                    <strong>Setting</strong>
+                  </div>
+                    <div class="divider"></div>
+                  <div class="dropdown-item text-xs-center">
+                    <strong>Package Manager</strong>
+                  </div>
+                    <div class="divider"></div>
+                </div>
+              </li> 
+            </ul>   
+    </header>
+    <div class="sidebar">
+      <nav class="sidebar-nav">
+        <ul class="nav nav-list">
+          <li class="nav-item sidebar-text-font">
+              <a class="nav-link" href="#"><i class="fa fa-user-plus"></i> ASSIGNMENTS </a>
+          </li>
+          <li class="divider"></li>
+          <li class="nav-item sidebar-text-font">
+              <a class="nav-link" href="widgets.html"><i class="fa fa-bar-chart"></i> PROGRESS</a>
+          </li>
+          <li class="nav-item sidebar-text-font">
+              <a class="nav-link" href="charts.html"><i class="fa fa-users"></i>TEAMS</a>
+          </li>
+          <li class="divider"></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main content -->
+    <main class="main">
+        <div class="container-fluid pt-2">
+          <div class="row">
+              <div class="col-sm-12 col-lg-12">`
+                  <div class="card">
+                      <div class="card-block p-1 clearfix">
+                          <div class="row">
+                              <div class="col-sm-4">
+                                <div class="callout">
+                                  <h3 class="card-title clearfix mb-0">ASSIGN</h3>
+                                </div>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="callout callout-info">
+                                  <small>Language: English</small>
+                                </div>
+                              </div>
+                              <div class="col-lg-6 horizontal-bars">
+                                <div class="callout">
+                                  <button type="button" class=" btn button-margin btn-danger btn-lg">DELETE</button>
+                                  <button type="button" class="btn button-margin btn-info btn-lg">EDIT</button>
+                                  <button type="button" class="btn button-margin btn-success btn-lg">ADD</button>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!--/.col-->
+          </div>
+          <!--/.row-->
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="card">
+                          <br>
+                         <table class="table table-hover table-outline">
+                                    <thead class="thead-default">
+                                        <tr>
+                                            <th class="text-xs-center">
+                                                    <div class="checkbox">
+                                                      <input id="checkbox1" class="styled" type="checkbox">
+                                                        <label for="checkbox1"></label>
+                                                    </div>
+                                            </th>
+                                            <th class="text-xs-center th-text-font">Team Size</th>
+                                            <th class="text-xs-center th-text-font">Milestone</th>
+                                            <th class="text-xs-center th-text-font">Unit</th>
+                                            <th class="text-xs-center th-text-font">Name(s)</th>
+                                            <th class="text-xs-center th-text-font">Start Date</th>
+                                             <th class="text-xs-center th-text-font">End Date</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-xs-center">
+                                               <div class="checkbox">
+                                                      <input id="checkbox2" class="styled" type="checkbox">
+                                                        <label for="checkbox2"></label>
+                                                    </div>
+                                            </td>
+                                            <td class="text-xs-center">
+                                              <span class="text-font">4</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                               <span class=" text-font">MAST</span> 
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <span class="text-font">MARK 1</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <span class="text-font">Mario Myers</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <strong class="text-font">5-11-2016</strong>
+                                            </td>
+                                             <td class="text-xs-center">
+                                                <strong class="text-font">5-11-2016</strong>
+                                            </td>
+                                        </tr>
+                                         <tr class="tr-color">
+                                            <td class="text-xs-center">
+                                                  <div class="checkbox">
+                                                      <input id="checkbox3" class="styled" type="checkbox">
+                                                        <label for="checkbox3"></label>
+                                                    </div>
+                                            </td>
+                                            <td class="text-xs-center">
+                                            <span class="text-font">3</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                               <span class="text-font">Self Checking</span> 
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <span class="text-font">Methew 3</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <span class="text-font">Myrtie underwood</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <strong class="text-font">1-12-2016</strong>
+                                            </td>
+                                             <td class="text-xs-center">
+                                                <strong class="text-font">1-12-2016</strong>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="text-xs-center">
+                                              <div class="checkbox">
+                                                    <input id="checkbox4" class="styled" type="checkbox">
+                                                      <label for="checkbox4"></label>
+                                                  </div>
+                                            </td>
+                                            <td class="text-xs-center">
+                                            <span class="text-font">3</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                               <span class="text-font">Community Check</span> 
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <span class="text-font">John 4</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <span class="text-font">Caroline Aguilar</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <strong class="text-font">12-18-2016</strong>
+                                            </td>
+                                             <td class="text-xs-center">
+                                                <strong class="text-font">12-18-2016</strong>
+                                            </td>
+                                        </tr>
+                                         <tr class="tr-color">
+                                            <td class="text-xs-center">
+                                              <div class="checkbox">
+                                                    <input id="checkbox5" class="styled" type="checkbox">
+                                                      <label for="checkbox5"></label>
+                                              </div>
+                                            </td>
+                                            <td class="text-xs-center">
+                                              <span class="text-font">2</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                               <span class="text-font">Stage 1</span> 
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <span class="text-font">Acts 1</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <span class="text-font">laila Schultz</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <strong class="text-font">1-24-2016</strong>
+                                            </td>
+                                             <td class="text-xs-center">
+                                                <strong class="text-font">1-24-2016</strong>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="text-xs-center">
+                                              <div class="checkbox">
+                                                <input id="checkbox6" class="styled" type="checkbox">
+                                                  <label for="checkbox6"></label>
+                                              </div>
+                                            </td>
+                                            <td class="text-xs-center">
+                                              <span class="text-font">3</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                               <span class="text-font">Stage 4</span> 
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <span class="text-font">Luke 12</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <span class="text-font">Mitchel terry</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <strong class="text-font">4-19-2016</strong>
+                                            </td>
+                                             <td class="text-xs-center">
+                                                <strong class="text-font">4-19-2016</strong>
+                                            </td>
+                                        </tr>
+                                         <tr class="tr-color">
+                                            <td class="text-xs-center">
+                                              <div class="checkbox">
+                                                <input id="checkbox7" class="styled" type="checkbox">
+                                                  <label for="checkbox7"></label>
+                                              </div>
+                                            </td>
+                                            <td  class="text-xs-center">
+                                              <span class="text-font">3</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                               <span class="text-font">Community Check</span> 
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <span class="text-font">Genesis 20</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <span class="text-font">Scott Duncan</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <strong class="text-font">7-7-2016</strong>
+                                            </td>
+                                             <td class="text-xs-center">
+                                                <strong class="text-font">7-7-2016</strong>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="text-xs-center">
+                                              <div class="checkbox">
+                                                <input id="checkbox8" class="styled" type="checkbox">
+                                                  <label for="checkbox8"></label>
+                                              </div>
+                                            </td>
+                                            <td class="text-xs-center">
+                                            <span class="text-font">5</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                               <span class="text-font">Stage 3</span> 
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <span class="text-font">Job 13</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <span class="text-font">Annie Gutierrez</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <strong class="text-font">8-15-2016</strong>
+                                            </td>
+                                             <td class="text-xs-center">
+                                                <strong class="text-font">8-15-2016</strong>
+                                            </td>
+                                        </tr>
+                                         <tr class="tr-color">
+                                            <td class="text-xs-center">
+                                              <div class="checkbox">
+                                                <input id="checkbox9" class="styled" type="checkbox">
+                                                  <label for="checkbox9"></label>
+                                              </div> 
+                                            </td>
+                                            <td class="text-xs-center">
+                                              <span class="text-font">4</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                               <span class="text-font">Stage 4</span> 
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <span class="text-font">Esther 4</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <span class="text-font">Ora Reid</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <strong class="text-font">2-19-2016</strong>
+                                            </td>
+                                             <td class="text-xs-center">
+                                                <strong class="text-font">2-19-2016</strong>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td class="text-xs-center">
+                                              <div class="checkbox">
+                                                <input id="checkbox10" class="styled" type="checkbox">
+                                                  <label for="checkbox10"></label>
+                                              </div>
+                                            </td>
+                                            <td class="text-xs-center">
+                                              <span class="text-font">2</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                               <span class="text-font">Stage 1</span> 
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <span class="text-font">Psaims 23</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <span class="text-font">Jose Wong</span>
+                                            </td>
+                                            <td class="text-xs-center">
+                                                <strong class="text-font">6-06-2016</strong>
+                                            </td>
+                                             <td class="text-xs-center">
+                                                <strong class="text-font">6-06-2016</strong>
+                                            </td>
+                                        </tr>
+                                                                                 <!-- end ngRepeat: user in users -->
+                                    </tbody>
+                                </table>
+                          <!-- table-->
+                      </div>
+                    </div>
+              <!--/.col-->
+                </div>
+              <!--/.row-->
+            </div>
+          </div>
+        <!-- /.conainer-fluid -->
+      </main>
+
+    <footer class="footer">
+
+    </footer>
+  </body>
+</html>
